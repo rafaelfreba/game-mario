@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/button.css">
     <script src="./js/script.js" defer></script>
     <title>Game Mario</title>
 </head>
+
 <body>
-    
+
+    <div class="game-board">
+
+        <img src="./img/clouds.png" class="clouds">
+        <img src="./img/mario.gif" class="mario">
+        <img src="./img/pipe.png" class="pipe">
+
+        <div class="container">
+            <img src="./img/end.png" class="end">
+            <span class="score"></span>
+            <a href="#" class="button type--C" onclick="window.location.reload(true)">
+                <div class="button__line"></div>
+                <div class="button__line"></div>
+                <span class="button__text">RELOAD</span>
+                <div class="button__drow1"></div>
+                <div class="button__drow2"></div>
+            </a>
+        </div>
+
+    </div>
 </body>
+
 </html>
