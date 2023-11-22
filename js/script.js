@@ -7,14 +7,15 @@ const clouds = document.querySelector('.clouds')
 
 const button = document.querySelector('.container')
 
-const aux = document.querySelector('#score')
+const score = document.querySelector('.score')
 
-var score = 0;
+var aux = 0;
 
 const jump = () => {
     
     mario.classList.add('jump')
-    score++
+    
+    aux = aux + 1
     
     setTimeout(() => {
         
@@ -47,7 +48,7 @@ const loop = setInterval(() => {
 
         button.style.display = 'flex'
 
-        aux.innerHTML = `SCORE: ${score}`
+        score.innerHTML = `SCORE ${aux}`
 
         clearInterval(loop)
 
